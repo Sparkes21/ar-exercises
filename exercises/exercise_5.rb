@@ -14,5 +14,5 @@ puts total_revenue
 average_revenue = Store.average(:annual_revenue)
 puts average_revenue
 
-large_sales = Store.where('annual_revenue >= 1000000', 1000000).count
-puts large_sales
+high_sales = Store.where('annual_revenue >= 1000000', 1000000).count
+puts high_sales
